@@ -2,10 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
 
 public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
+
+    public Text scoreText;
+    private int score;
 
     public bool GameRunning { get; private set;}
 
@@ -20,6 +24,9 @@ public class GameManager : MonoBehaviour
     void Start()
     {
         GameRunning = false;
+
+        score = 0;
+        scoreText.text = $"Score: {score}";
     }
 
     public void StartGame()
@@ -30,5 +37,11 @@ public class GameManager : MonoBehaviour
     public void ResetGame()
     {
         SceneManager.LoadScene("Game");
+    }
+
+    public void AddPoint()
+    {
+        score++;
+        scoreText.text = $"Score: {score}";
     }
 }
