@@ -54,8 +54,8 @@ public class Player : MonoBehaviour
         }
     }
 
-    private void OnCollisionExit(Collision collision)
+    private void OnTriggerEnter(Collider other)
     {
-        Debug.Log(collision.gameObject.tag);
+        other.gameObject.SetActive(false);
     }
 }
