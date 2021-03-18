@@ -2,33 +2,6 @@
     "name": "InputActions",
     "maps": [
         {
-            "name": "Player",
-            "id": "3949a7e3-6d85-44b3-a256-35290b396940",
-            "actions": [
-                {
-                    "name": "Turn",
-                    "type": "Button",
-                    "id": "44b5093f-b29d-4e18-9bfd-83c2039b80a3",
-                    "expectedControlType": "Button",
-                    "processors": "",
-                    "interactions": ""
-                }
-            ],
-            "bindings": [
-                {
-                    "name": "",
-                    "id": "46f56011-f668-44d9-b141-e93b3149949f",
-                    "path": "<Keyboard>/space",
-                    "interactions": "",
-                    "processors": "",
-                    "groups": "",
-                    "action": "Turn",
-                    "isComposite": false,
-                    "isPartOfComposite": false
-                }
-            ]
-        },
-        {
             "name": "Loader",
             "id": "8f61179e-a662-4d47-b641-16447653c00f",
             "actions": [
