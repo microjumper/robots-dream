@@ -15,7 +15,7 @@ public class Player : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        transform.position = transform.position + transform.forward * speed * Time.deltaTime;
+        //transform.position = transform.position + transform.forward * speed * Time.deltaTime;
     }
 
     public void Turn()

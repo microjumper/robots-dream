@@ -27,6 +27,33 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Loader",
+            "id": "8f61179e-a662-4d47-b641-16447653c00f",
+            "actions": [
+                {
+                    "name": "Load Scene",
+                    "type": "Button",
+                    "id": "b77a54b2-1a6b-4862-a93e-0df52052b079",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": ""
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "61b35745-a236-4b8f-99f2-545804e69fb5",
+                    "path": "",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "Load Scene",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": []
