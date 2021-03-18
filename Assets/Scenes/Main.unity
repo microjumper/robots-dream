@@ -437,6 +437,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 5117219924249692594, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
 --- !u!1 &460484700
@@ -572,6 +576,10 @@ PrefabInstance:
     - target: {fileID: 2107342591788760945, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
       propertyPath: m_Name
       value: Cube
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117219924249692594, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
@@ -731,6 +739,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Cube (3)
       objectReference: {fileID: 0}
+    - target: {fileID: 5117219924249692594, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
 --- !u!1 &1100906170
@@ -861,6 +873,10 @@ PrefabInstance:
     - target: {fileID: 2107342591788760945, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
       propertyPath: m_Name
       value: Cube (1)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117219924249692594, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
@@ -1067,6 +1083,10 @@ PrefabInstance:
     - target: {fileID: 2107342591788760945, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
       propertyPath: m_Name
       value: Cube (2)
+      objectReference: {fileID: 0}
+    - target: {fileID: 5117219924249692594, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
+      propertyPath: m_IsActive
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7894c8b1638fe3a4c9319d65e90885b6, type: 3}
