@@ -36,6 +36,14 @@ public class Player : MonoBehaviour
                 GameManager.instance.StartGame();
             }
         }
+
+
+        animator.SetFloat("position.y", transform.position.y);
+
+        if (transform.position.y < -3)
+        {
+            GameManager.instance.ResetGame();
+        }
     }
 
     void FixedUpdate()
@@ -44,5 +52,10 @@ public class Player : MonoBehaviour
         {
             rigidbody.transform.position = transform.position + transform.forward * speed * Time.deltaTime;
         }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        Debug.Log(collision.gameObject.tag);
     }
 }
