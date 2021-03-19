@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
@@ -14,11 +12,6 @@ public class Player : MonoBehaviour
     {
         rigidbody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
-    }
-
-    void Start()
-    {
-
     }
 
     void Update()
@@ -36,7 +29,6 @@ public class Player : MonoBehaviour
                 GameManager.instance.StartGame();
             }
         }
-
 
         animator.SetFloat("position.y", transform.position.y);
 

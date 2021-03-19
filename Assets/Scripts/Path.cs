@@ -1,5 +1,3 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Path : MonoBehaviour
@@ -8,6 +6,8 @@ public class Path : MonoBehaviour
     public Transform lastPosition;
 
     public float offset = 0.7071068f;
+
+    public ObjectPool pool;
 
     private int cubeCount = 0;
     private int crystalChance = 0;
@@ -19,7 +19,7 @@ public class Path : MonoBehaviour
 
     private void SpawnCube()
     {
-        Vector3 spawnPosition; ;
+        Vector3 spawnPosition;
 
         int chance = Random.Range(0, 100);
         if (chance < 50)
@@ -33,8 +33,7 @@ public class Path : MonoBehaviour
             spawnPosition = new Vector3(lastPosition.position.x - offset, lastPosition.position.y, lastPosition.position.z + offset);
         }
 
-        GameObject cube = Instantiate(cubePrefab, spawnPosition, Quaternion.Euler(0, 45, 0));
-        cube.transform.SetParent(gameObject.transform);
+        GameObject cube = pool.Spawn(spawnPosition, Quaternion.Euler(0, 45, 0));
 
         lastPosition = cube.transform;
 
