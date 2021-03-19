@@ -8,6 +8,8 @@ public class GameManager : MonoBehaviour
 {
     public static GameManager instance;
 
+    public Path path;
+
     public Text scoreText;
     private int score;
 
@@ -32,6 +34,8 @@ public class GameManager : MonoBehaviour
     public void StartGame()
     {
         GameRunning = true;
+
+        path.StartBuilding();
     }
 
     public void ResetGame()
