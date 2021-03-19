@@ -11,6 +11,8 @@ public class GameManager : MonoBehaviour
     public Text scoreText;
     private int score;
 
+    public GameObject guideText;
+
     public bool GameRunning { get; private set;}
 
     void Awake()
@@ -34,6 +36,8 @@ public class GameManager : MonoBehaviour
         GameRunning = true;
 
         path.StartBuilding();
+
+        guideText.SetActive(false);
     }
 
     public void ResetGame()
