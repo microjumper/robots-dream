@@ -3,15 +3,19 @@ using UnityEngine.InputSystem;
 
 public class Player : MonoBehaviour
 {
+    public AudioClip collectClip;
+
     private readonly float speed = 2;
 
     private new Rigidbody rigidbody;
     private Animator animator;
+    private AudioSource audioSource;
 
     void Awake()
     {
         rigidbody = GetComponent<Rigidbody>();
         animator = GetComponent<Animator>();
+        audioSource = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -20,6 +24,7 @@ public class Player : MonoBehaviour
         {
             if (GameManager.instance.GameRunning)
             {
+                // changes player direction
                 transform.rotation = Quaternion.Euler(0, -transform.rotation.eulerAngles.y, 0);
             }
             else
@@ -48,7 +53,11 @@ public class Player : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        audioSource.clip = collectClip;
+        audioSource.Play();
+
         GameManager.instance.AddPoint();
+
         other.gameObject.SetActive(false);
     }
 }
