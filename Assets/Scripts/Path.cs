@@ -22,6 +22,7 @@ public class Path : MonoBehaviour
         Vector3 spawnPosition;
 
         int chance = Random.Range(0, 100);
+
         if (chance < 50)
         {
             // right
@@ -38,7 +39,7 @@ public class Path : MonoBehaviour
         lastPosition = cube.transform;
 
         if (cubeCount == 0)
-            crystalChance = Random.Range(3, 9);
+            crystalChance = Random.Range(3, 9); // a crystal will spawn every 3 to 9 cubes 
 
         if (cubeCount == crystalChance)
         {
